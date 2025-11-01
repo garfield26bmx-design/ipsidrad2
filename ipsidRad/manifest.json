@@ -1,0 +1,46 @@
+{
+  "name": "Radiocast",
+  "short_name": "Radiocast",
+  "version": "1.0.1",
+  "description": "Explore and listen to radio stations from around the world",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Popular Stations",
+      "short_name": "Popular",
+      "description": "View popular radio stations",
+      "url": "/?filter=popular"
+    }
+  ],
+  "categories": ["entertainment", "music", "radio"]
+} 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+
+    <!-- Progressive Web App basics -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Radiocast">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Primary Meta -->
+    <title>Radiocast - Worldwide Radio Map</title>
+    <meta name="description"
+      content="Stream live radio from thousands of stations worldwide. Free, no signup required.">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Radiocast - Explore World Radio Stations">
+    <meta property="og:description"
+      content="Discover and listen to radio stations from around the world. More than 8000 stations available.">
+    <meta property="og:image" content="https://radio.prateekkeshari.com/og-image.webp">
+
+    <!-- Core assets -->
+    <script type="module" crossorigin src="/assets/main-7dcdea7d.js"></script>
+    <link rel="stylesheet" href="/assets/index-6dc0a027.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {
+              console.log('ServiceWorker registration successful');
+              registration.update();
+            })
+            .catch(err => console.warn('ServiceWorker registration failed:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
