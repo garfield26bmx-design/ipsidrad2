@@ -2,127 +2,59 @@
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    
-    <!-- PWA specific meta tags -->
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+
+    <!-- Progressive Web App basics -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Radiocast">
-    
-    <!-- iOS icons for all sizes -->
+
+    <!-- Icons -->
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    
-    <!-- iOS splash screens -->
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-2048-2732.webp" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-2732-2048.webp" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-1668-2388.webp" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-2388-1668.webp" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-1536-2048.webp" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-2048-1536.webp" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-1668-2224.webp" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-2224-1668.webp" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-1290-2796.webp" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-2796-1290.webp" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-1179-2556.webp" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-2556-1179.webp" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-1284-2778.webp" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-2778-1284.webp" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-1170-2532.webp" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-    <link rel="apple-touch-startup-image" href="/splash-webp/apple-splash-2532-1170.webp" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-    
+
     <!-- Manifest -->
-    <link rel="manifest" href="/manifest.json?v=9">
-    
-    <!-- Primary Meta Tags -->
-    <title>Radiocast - Listen to 8000+ Free Online Radio Stations Worldwide</title>
-    <meta name="title" content="Radiocast - Listen to 8000+ Free Online Radio Stations Worldwide">
-    <meta name="description" content="Stream live radio from 8000+ stations worldwide. Discover local FM radio, international broadcasts, and music from every genre. Free, no signup required. Available on web, mobile, and desktop.">
-    
-    <!-- Theme Color for browsers -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Primary Meta -->
+    <title>Radiocast - Worldwide Radio Map</title>
+    <meta name="description"
+      content="Stream live radio from thousands of stations worldwide. Free, no signup required.">
+
+    <!-- Theme Color -->
     <meta name="theme-color" content="#000000">
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-    
-    <!-- iOS status bar -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
-    <!-- Open Graph / Facebook -->
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://radiocast.co">
     <meta property="og:title" content="Radiocast - Explore World Radio Stations">
-    <meta property="og:description" content="Discover and listen to radio stations from around the world. More than 8000 stations available.">
+    <meta property="og:description"
+      content="Discover and listen to radio stations from around the world. More than 8000 stations available.">
     <meta property="og:image" content="https://radio.prateekkeshari.com/og-image.webp">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://radiocast.co">
-    <meta name="twitter:title" content="Radiocast - Explore World Radio Stations">
-    <meta name="twitter:description" content="Discover and listen to radio stations from around the world. More than 8000 stations available.">
-    <meta name="twitter:image" content="https://radio.prateekkeshari.com/og-image.webp">
-    
-    <meta name="robots" content="index,follow">
-    <meta name="googlebot" content="index,follow">
-    <script type="module" crossorigin src="./assets/main-7dcdea7d.js"></script>
-    <link rel="stylesheet" href="./assets/index-6dc0a027.css">
+
+    <!-- Core assets -->
+    <script type="module" crossorigin src="/assets/main-7dcdea7d.js"></script>
+    <link rel="stylesheet" href="/assets/index-6dc0a027.css">
   </head>
+
   <body>
-    <!-- 100% privacy-first analytics -->
-    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-    
     <div id="root"></div>
-    
-    
+
     <!-- Service Worker Registration -->
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          // Check for service worker updates every hour
-          setInterval(() => {
-            navigator.serviceWorker.getRegistration().then(registration => {
-              if (registration) registration.update();
-            });
-          }, 3600000); // 1 hour
-          
           navigator.serviceWorker.register('/service-worker.js')
             .then(registration => {
               console.log('ServiceWorker registration successful');
-              // Immediately check for updates
               registration.update();
-              
-              // Handle updates
-              registration.addEventListener('updatefound', () => {
-                const newWorker = registration.installing;
-                newWorker.addEventListener('statechange', () => {
-                  if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                    // New content is available, show refresh prompt
-                    if (confirm('New version available! Click OK to refresh.')) {
-                      window.location.reload();
-                    }
-                  }
-                });
-              });
             })
-            .catch(err => {
-              console.log('ServiceWorker registration failed: ', err);
-            });
-        });
-        
-        // Handle communication from service worker
-        navigator.serviceWorker.addEventListener('message', event => {
-          if (event.data.type === 'CACHE_UPDATED') {
-            // Show refresh prompt
-            if (confirm('New version available! Click OK to refresh.')) {
-              window.location.reload();
-            }
-          }
+            .catch(err => console.warn('ServiceWorker registration failed:', err));
         });
       }
     </script>
   </body>
 </html>
-
