@@ -156,8 +156,36 @@
         });
       }
     </script>
+
+    <script>
+  // Wait until the page is fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Function to remove support button
+    function removeSupportButton() {
+      // Find any element with a Support label or $ sign
+      const supportButtons = Array.from(document.querySelectorAll('*')).filter(el =>
+        el.textContent.trim() === '$' ||
+        el.getAttribute('aria-label')?.toLowerCase().includes('support')
+      );
+
+      supportButtons.forEach(btn => btn.remove());
+    }
+
+    // Run once initially
+    removeSupportButton();
+
+    // Keep watching for new elements (in case it's injected dynamically)
+    const observer = new MutationObserver(removeSupportButton);
+    // Remove any donation popups or footers
+document.querySelectorAll('[aria-label*="Support"], .support-modal, .donation, .footer').forEach(e => e.remove());
+
+    observer.observe(document.body, { childList: true, subtree: true });
+  });
+</script>
+
   </body>
 </html>
+
 
 
 
